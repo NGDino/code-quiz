@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Quiz</title>
+    <link rel="stylesheet" type="text/css" href="./assets/CSS/styles.css"/>
+</head>
+
+
+<body>
+ <!--header needs link to view highscores and a timer that will count down-->
+    <header>
+        <a href="#highscore" id="viewhighscore">View Highscore</a>
+        <span id="timer">Timer</span>
+    </header>
+
+ <!--need container for everything.  A title that will change into questions a area for multiple choice answers that will start as a buttion to start quiz-->
+    <main class="container">
+        <div class="large-text">
+            <h1 id="question">Coding Quiz</h1>
+            <div class="answers">
+                <button type="button" id="start-quiz">START</button>
+                <span id = "rightwrong"></span>
+            </div>
+        </div>
+    </main>
+    
+
+    <script type="text/javascript" src="./assets/JS/script.js"></script>
+</body>
+</html>
