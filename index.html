@@ -11,18 +11,30 @@
 <body>
  <!--header needs link to view highscores and a timer that will count down-->
     <header>
-        <a href="#highscore" id="viewhighscore">View Highscore</a>
-        <span id="timer">Timer</span>
+        <a href="#highscore" id="viewhighscore">View Highscores</a>
+        <p id="timer">
+            Timer <span id="countdown"></span>
+        </p>
     </header>
 
  <!--need container for everything.  A title that will change into questions a area for multiple choice answers that will start as a buttion to start quiz-->
-    <main class="container">
-        <div class="large-text">
-            <h1 id="question">Coding Quiz</h1>
-            <div class="answers">
-                <button type="button" id="start-quiz">START</button>
-                <span id = "rightwrong"></span>
+    <main>
+        <div class = "container" id="quiz-container">
+            <div id = "question-container" class= "hide">
+                <div id= "question">Question</div>
+                <div id = "answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
             </div>
+    
+            <div class="controls">
+                <button class= "start-btn btn" id="start-btn">START</button>
+                <button class= "btn next-btn hide" id= "next-btn">NEXT</button>
+                </div>
+            <span id = "rightwrong"></span>
         </div>
     </main>
     
